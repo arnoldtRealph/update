@@ -6,9 +6,12 @@ import requests
 from streamlit_extras.app_logo import add_logo
 import streamlit_analytics
 
+
+
 streamlit_analytics.start_tracking()
 # add app logo
 add_logo("IMAGES/wapen.png", height=150)
+
 
 # Define lottie url
 def load_lottieurl(url):
@@ -29,8 +32,10 @@ lottie_coding = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_uq
 # Here is the title of the page
 st.write("Klik hieronder vir SGA en KURR. AFHANDELINGS INSTRUMENTE")
 
-
 st.write("[KLIK HIER](https://drive.google.com/drive/folders/1pi7vv0BvG5-s9o-j27jFWoiXI82Agarg?usp=share_link)")
+
+
+
 
 st_lottie(lottie_coding, height = 200 , key="coding")
 

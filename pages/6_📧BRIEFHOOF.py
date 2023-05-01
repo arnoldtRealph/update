@@ -7,6 +7,7 @@ from streamlit_extras.app_logo import add_logo
 import streamlit_analytics
 
 
+
 # add app logo
 add_logo("IMAGES/wapen.png", height=150)
 
@@ -29,8 +30,10 @@ lottie_coding = load_lottieurl("https://assets8.lottiefiles.com/private_files/lf
 # Here is the title of the page
 st.write("Klik hieronder die BRIEFHOOF")
 
-
 st.write("[KLIK HIER](https://drive.google.com/drive/folders/1j2aw8V6ySOmlVPODERkvBEU39o7ydAXC?usp=share_link)")
+
+
+
 
 st_lottie(lottie_coding, height = 200 , key="coding")
 

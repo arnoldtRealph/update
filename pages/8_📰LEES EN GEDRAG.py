@@ -20,22 +20,22 @@ def load_lottieurl(url):
 
 # using streamlit extras colored eader
 colored_header(
-    label="SCHOOL BAG AUDIT:",
+    label="LEES EN GEDRAGSPROBLEME:",
     description="U kan hierdie dokumente aflaai en stoor op u toestel vir toekomstige gebruik:",
-    color_name="yellow-70",
+    color_name="green-70",
 )
 
-lottie_coding = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_VUlRFjKj5P.json")
+lottie_coding = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_gB9sL4mhdM.json")
 
 # Here is the title of the page
-st.write("Klik hieronder vir SCHOOL BAG AUDIT VORM:")
+st.write("Klik hieronder vir leerders met lees en gedragsprobleme(SKOON VORM):")
 
-st.write("[KLIK HIER](https://drive.google.com/drive/folders/1ehkG5bCisUbSVYQLslCXRh9aKK4Y-KGQ?usp=share_link)")
-
-
+st.write("[KLIK HIER](https://drive.google.com/drive/folders/1TCbGnwL81epUGSazj0UFj8CSQ9ygKvSh?usp=share_link)")
 
 
-st_lottie(lottie_coding, height = 200 , key="coding")
+
+
+st_lottie(lottie_coding, height = 400 , key="coding")
 
 
 streamlit_analytics.stop_tracking()
