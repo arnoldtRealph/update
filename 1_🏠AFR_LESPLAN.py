@@ -10,6 +10,7 @@ from streamlit_extras.app_logo import add_logo
 import streamlit_analytics
 import requests
 from datetime import datetime
+import pandas as pd
 
 streamlit_analytics.start_tracking()
 
@@ -18,6 +19,30 @@ Header_image = Image.open("IMAGES/header.png")
 
 # Set page title and icon
 st.set_page_config(page_title="Lesson Plan Creator", page_icon=":books:", layout= "wide")
+
+
+
+# Load the data from the Excel file
+df = pd.read_excel('teachers_birthdays.xlsx')
+
+# Get the current date
+today = datetime.now().strftime("%m-%d")
+
+# Filter the teachers whose birthday is today
+today_df = df[df['Birthday'].str.contains(today)]
+
+# If there are teachers with birthdays today, show their names with a birthday cake icon
+if len(today_df) > 0:
+    st.header("**Happy Birthday!**")
+    for name in today_df['Name']:
+        st.header(f"🎂 {name}")
+
+
+
+
+
+
+
 st.success("👈Check out the sidebar for more info!")
 st.image("IMAGES/header.png")
 
