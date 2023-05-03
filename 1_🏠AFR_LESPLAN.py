@@ -18,6 +18,7 @@ Header_image = Image.open("IMAGES/header.png")
 
 # Set page title and icon
 st.set_page_config(page_title="Lesson Plan Creator", page_icon=":books:", layout= "wide")
+st.success("👈Check out the sidebar for more info!")
 st.image("IMAGES/header.png")
 
 
