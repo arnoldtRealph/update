@@ -39,10 +39,7 @@ if len(today_df) > 0:
 
 
 
-
-
-
-
+# Sidebar info
 st.success("👈Check out the sidebar for more info!")
 st.image("IMAGES/header.png")
 
@@ -82,7 +79,8 @@ st.subheader("OPVOEDER BESONDERHEDE")
 teacher_name = st.text_input("VOORLETTERS")
 teacher_surname = st.text_input("VAN")
 st.write("")
-st.write("Created by Mr. A.R Visagie @ Saul Damon High School")
+st.write("##")
+st.markdown(" :blue[Created by **Mr. A.R Visagie** @ Saul Damon High School]")
 
 # Create save button
 if st.button("Create Lesson Plan"):
